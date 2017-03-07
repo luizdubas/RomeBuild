@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		054C97811D549B3B00C481BD /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C97801D549B3B00C481BD /* TaskStatus.swift */; };
 		056D13DE1CEF5C55002FF045 /* Progress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056D13DB1CEF58B2002FF045 /* Progress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1DB2FA4D9B9224C85704F8 /* ArchiveCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DB05771FA224511AB16B1 /* ArchiveCommand.swift */; };
 		A14315981CDBFC3F00C279FD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14315971CDBFC3F00C279FD /* main.swift */; };
 		A14315A31CDBFEA300C279FD /* RomeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A143159A1CDBFE8600C279FD /* RomeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A14315A51CDBFEA300C279FD /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A143159B1CDBFE8600C279FD /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		054C97801D549B3B00C481BD /* TaskStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskStatus.swift; path = Utilities/TaskStatus.swift; sourceTree = "<group>"; };
 		056D13DB1CEF58B2002FF045 /* Progress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Progress.framework; path = Carthage/Build/Mac/Progress.framework; sourceTree = "<group>"; };
+		8F1DB05771FA224511AB16B1 /* ArchiveCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveCommand.swift; sourceTree = "<group>"; };
 		A14315871CDBFB9200C279FD /* RomeBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14315911CDBFB9200C279FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A14315971CDBFC3F00C279FD /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A14315AE1CDC014B00C279FD /* BuildCommand.swift */,
 				A14315C41CDE7E5700C279FD /* UploadCommand.swift */,
 				A14E81E51CF272020064DF2B /* UploadSelfCommand.swift */,
+				8F1DB05771FA224511AB16B1 /* ArchiveCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				A14315BE1CDE2C8A00C279FD /* Carthage.swift in Sources */,
 				A14315981CDBFC3F00C279FD /* main.swift in Sources */,
 				A14315BD1CDE2C8A00C279FD /* Cartfile.swift in Sources */,
+				8F1DB2FA4D9B9224C85704F8 /* ArchiveCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

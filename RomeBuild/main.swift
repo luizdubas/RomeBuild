@@ -31,11 +31,15 @@ let uploadSelf = MultiStringOption(shortFlag: "s",
                                  required: false,
                                  helpMessage: "Builds & uploads self, requires product name & revision parameters")
 
+let archiveUpload = MultiStringOption(shortFlag: "a",
+                                      longFlag: "archive",
+                                      helpMessage: "Archive & uploads only self, requires product name & revision parameters")
+
 let help = BoolOption(shortFlag: "h",
                       longFlag: "help",
                       helpMessage: "Gives a list of supported operations")
 
-cli.addOptions(build, platform, upload, uploadSelf, help)
+cli.addOptions(build, platform, upload, uploadSelf, archiveUpload, help)
 
 do {
     try cli.parse()
@@ -51,6 +55,12 @@ do {
             }
         } else {
             UploadCommand().upload(platform.value)
+        }
+    } else if let archiveParameters = archiveUpload.value {
+        if archiveParameters.count == 2 {
+            ArchiveCommand().upload(archiveParameters[0], revision: archiveParameters[1], platforms: platform.value)
+        } else {
+            print("Uploading self requires product name & revision parameters")
         }
     } else {
         HelpCommand().printHelp()
