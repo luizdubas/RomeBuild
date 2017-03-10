@@ -9,7 +9,7 @@ struct ArchiveCommand {
 
         let status = Carthage(["archive"])
 
-        Helpers().uploadAsset(productName, revision: revision, filePath: getFrameworkPath(status))
+        Helpers().uploadAsset(productName, revision: revision, filePath: getFrameworkPath(status), removeFile: false)
         print("Upload complete")
 
     }

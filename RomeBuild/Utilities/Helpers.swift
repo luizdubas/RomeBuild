@@ -2,7 +2,7 @@ import Foundation
 
 struct Helpers {
 
-    func uploadAsset(name: String, revision: String, filePath: String? = nil) {
+    func uploadAsset(name: String, revision: String, removeFile: Bool = true, filePath: String? = nil) {
         var path: String
         if let filePath = filePath {
             path = filePath
